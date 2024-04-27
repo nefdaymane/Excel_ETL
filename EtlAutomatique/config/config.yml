@@ -1,0 +1,16 @@
+database:
+  model: ville
+  attributes:
+    - name: nom
+      type: String
+    - name: pays
+      type: String
+    - name: population
+      type: String
+
+excel:
+  sheetName: ville
+  defaultValue:
+    nom: "null"
+    pays: "null"
+    population: 0

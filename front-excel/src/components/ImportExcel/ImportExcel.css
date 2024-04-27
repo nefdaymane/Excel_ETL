@@ -1,0 +1,186 @@
+/* Ajoutez ces styles à votre fichier CSS */
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    
+  }
+  
+  .file-input-container {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 15px; /* Utilisation de la moitié de la hauteur pour un aspect arrondi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #2980b9;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+  
+  .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .columns-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .columns-container div {
+    width: 30%;
+  }
+  
+  .columns-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .columns-list li {
+    margin-bottom: 5px;
+  }
+  
+  .columns-list li button {
+    margin-left: 5px;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+ /* Stylisation pour le conteneur des colonnes */
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styles pour chaque colonne */
+.columns-container > div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.columns-list {
+  list-style: none;
+  padding: 0;
+}
+
+.columns-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.columns-list li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Styles pour les icônes */
+.columns-list li .icon {
+  margin-left: 10px;
+}
+
+/* Styles de survol pour les boutons de déplacement */
+.columns-list li button:hover {
+  color: #3498db;
+}
+
+/* Ajustement pour la dernière flèche */
+.columns-list li:last-child button {
+  margin-bottom: 5px;
+}
+
+  
+  
+  .arrow-up, .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 5px;
+  }
+  
+  .arrow-up {
+    border-bottom: 5px solid #fff;
+  }
+  
+  .arrow-down {
+    border-top: 5px solid #fff;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }  
+
+
+  /* Stylisation pour le bouton Save */
+.save-button {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Styles de survol pour le bouton Save */
+.save-button:hover {
+  background-color: #219653;
+  transform: scale(1.05);
+}
+
+/* Bouton désactivé */
+.save-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
